@@ -124,7 +124,6 @@ Provides the overall execution results, confirmed defects, additional observatio
 
 - GitHub
 - GitHub Issues
-- Browser Developer Tools
 - Excel / Google Sheets
 - Manual Testing
 
