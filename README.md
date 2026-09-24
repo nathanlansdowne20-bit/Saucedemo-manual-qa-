@@ -1,84 +1,145 @@
-SauceDemo Manual QA Testing Project
+# SauceDemo Manual QA Testing Project
 
-Overview
+## Overview
 
-This repository contains an independent manual QA testing project using the SauceDemo web application.
+This repository contains an independent manual QA testing project performed on the SauceDemo web application.
 
-The purpose of this project is to demonstrate practical software testing skills, including test case design, functional testing, negative testing, exploratory testing, defect reporting, regression testing, and test documentation.
+The project demonstrates practical manual testing skills including test planning, test case design, functional testing, negative testing, exploratory testing, defect reporting, and test result documentation.
 
-Application Under Test
+> **Disclaimer:** This is an independent educational portfolio project and is not affiliated with or performed on behalf of Sauce Labs.
 
-Application: SauceDemo
-URL: https://www.saucedemo.com/
+---
 
-Testing Scope
+## Test Environment
 
-Testing will cover:
+- **Device:** iPhone 12
+- **Operating System:** iOS 26.6.2
+- **Browser:** Google
+- **Application:** SauceDemo
+- **Testing Type:** Manual
 
-* User authentication
-* Product inventory
-* Product sorting
-* Product details
-* Shopping cart
-* Checkout
-* Form validation
-* Order completion
-* Negative scenarios
+---
 
-Testing Types
+## Testing Scope
 
-* Functional Testing
-* Smoke Testing
-* Regression Testing
-* Exploratory Testing
-* Negative Testing
-* UI Testing
-* Usability Testing
+The primary testing covered:
 
-Tools
+- Authentication
+- Product inventory
+- Product details
+- Product sorting
+- Shopping cart
+- Checkout
+- Form validation
+- Order completion
 
-* GitHub
-* GitHub Issues
-* Web Browser Developer Tools
-* Microsoft Excel / Google Sheets
-* Manual Testing
+Additional exploratory testing covered:
 
-Project Deliverables
+- All Items
+- Dynamic Catalog
+- Lazy Load
+- Spinner
+- Slider
+- About
+- Logout
+- Reset App State
 
-* Test Plan
-* Test Cases
-* Test Execution Results
-* Bug Reports
-* Screenshots and Supporting Evidence
-* Regression Testing Results
-* Final Test Summary
+---
 
-Test Environment
+## Test Results
 
-Operating System: To be documented during testing
-Browser: To be documented during testing
-Device: To be documented during testing
+### Structured Testing
 
-Testing Methodology
+**20 test cases executed**
 
-Testing will follow a structured manual QA workflow:
+| Result | Count |
+|---|---:|
+| PASS | 20 |
+| FAIL | 0 |
+| BLOCKED | 0 |
+| NOT EXECUTED | 0 |
+| **Total** | **20** |
 
-1. Review application functionality and testing scope
-2. Develop test scenarios and test cases
-3. Execute test cases
-4. Document actual results
-5. Identify and reproduce defects
-6. Report defects with supporting evidence
-7. Retest defects after fixes or changes
-8. Perform regression testing
-9. Document final test results
+Two confirmed defects were identified during the overall testing effort.
 
-Project Status
+### Confirmed Defects
 
-Status: In Progress
+**Issue #1 — Mobile error notification extends outside viewport**
 
-Test results and findings will be added to this repository as testing is completed.
+Observed during invalid login testing. The error notification extended outside the visible mobile viewport.
 
-Disclaimer
+**Issue #2 — Reset App State leaves product controls in incorrect state**
 
-This is an independent QA practice project created for educational and portfolio purposes. It does not represent professional employment or testing performed for SauceDemo.
+After resetting the application state, the cart was cleared but a product control remained displayed as "Remove" until navigating away and returning.
+
+Both defects are documented in GitHub Issues with reproduction steps, expected behavior, actual behavior, severity, priority, and supporting evidence.
+
+---
+
+## Documentation
+
+### Test Plan
+
+Defines the testing objectives, scope, testing approach, severity definitions, test result statuses, and overall workflow.
+
+➡️ [View Test Plan](Test-plan/test-plan.md)
+
+### Test Cases
+
+Contains 20 structured manual test cases covering authentication, inventory, sorting, cart functionality, and checkout.
+
+➡️ [View Test Cases](Test-cases/test-cases.md)
+
+### Exploratory Testing
+
+Documents exploratory testing of the application's navigation menu and Dynamic Catalog functionality.
+
+➡️ [View Exploratory Testing](exploratory-testing/exploratory-menu-testing.md)
+
+### Test Execution Summary
+
+Provides the overall execution results, confirmed defects, additional observations, and testing limitations.
+
+➡️ [View Test Execution Summary](test-execution-summary.md)
+
+---
+
+## Testing Methods Demonstrated
+
+- Functional Testing
+- Negative Testing
+- Smoke Testing
+- Regression Testing
+- Exploratory Testing
+- UI Testing
+- Usability Observation
+- Defect Reporting
+- Test Case Design
+- Test Execution
+- Retesting
+
+---
+
+## Tools
+
+- GitHub
+- GitHub Issues
+- Browser Developer Tools
+- Excel / Google Sheets
+- Manual Testing
+
+---
+
+## Project Workflow
+
+The testing process followed a basic QA workflow:
+
+**Plan → Design Test Cases → Execute Tests → Identify Defects → Report Defects → Retest → Regression → Document Results**
+
+---
+
+## Portfolio Purpose
+
+This project was created to demonstrate practical manual QA testing skills through hands-on testing of a publicly accessible web application.
+
+It is intended as a portfolio project for QA and software testing applications.
